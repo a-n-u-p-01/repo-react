@@ -1,7 +1,7 @@
 import React from 'react'
 import './Background.css';
 
-function Backgrond() {
+function Background() {
   return (
     <>
     <div className='w-full py-10 px-10 bg-zinc-700/20 flex justify-between text-xl text-zinc-500 font-semibold tracking-widest'>
@@ -13,4 +13,4 @@ function Backgrond() {
   )
 }
 
-export default Backgrond
+export default Background
