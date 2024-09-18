@@ -7,7 +7,7 @@ function Repo({data,reference}) {
     <motion.div drag dragConstraints={reference} className='drop-shadow-lg p-6 flex flex-col justify-between bg-zinc-900/70 w-52 h-64 rounded-[50px] flex-shrink-0'>
       <div className='text-zinc-400'>
         <span className='font-bold text-lg'>{data.name}</span>
-        <div className='text-zinc-700 pt-1 overflow-auto h-24'>
+        <div className='text-zinc-700 pt-1 overflow-hidden h-24'>
         {data.description}
         </div>
       </div>

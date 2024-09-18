@@ -24,11 +24,12 @@ function Foreground() {
   }, []);
 
   return (
-    <div ref={ref} className='p-10 flex gap-10 absolute w-full h-[40rem] flex-wrap'>
-      {data.map((repo, index) => (
-        <Repo key={index} data={repo} reference={ref} />
-      ))}
-    </div>
+    <div ref={ref} className="p-10 flex gap-5 flex-wrap justify-between">
+    {data.map((repo, index) => (
+      <Repo key={index} data={repo} reference={ref} className="basis-[calc(20%-1rem)]" />
+    ))}
+  </div>
+  
   );
 }
 
