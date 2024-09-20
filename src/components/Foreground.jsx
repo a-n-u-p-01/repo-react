@@ -24,9 +24,9 @@ function Foreground() {
   }, []);
 
   return (
-    <div ref={ref} className="p-10 flex gap-5 flex-wrap justify-between">
+    <div ref={ref} className="fixed gap-7 p-4 pl-14 pt-36 grid grid-cols-6 ">
     {data.map((repo, index) => (
-      <Repo key={index} data={repo} reference={ref} className="basis-[calc(20%-1rem)]" />
+      <Repo key={index} data={repo} reference={ref}/>
     ))}
   </div>
   
